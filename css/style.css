@@ -1,0 +1,459 @@
+  * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF8F6;
+    /*margin-left: 10.45%;
+    margin-right: 10.45%;*/
+} 
+#preloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-repeat: no-repeat; 
+    background-color: #FFF8F6;
+    background-position: center;
+    transform: translate(-50%,-50%);
+    transition: all 2s;
+}   
+#preloader img {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.bodyMargin {
+    margin-left: 10.45%;
+    margin-right: 10.45%; 
+}
+header {
+    margin-top:30px;
+    height: 120px;
+    vertical-align: top;
+    /*display: flex;*/
+    width: 100%;
+    font-family: "Arimo", sans-serif;
+}
+.myLogo {
+    width: 50%;
+    height: auto;
+    max-width: 250px;
+    float: left;
+    line-height: 80px;
+}
+header ul {
+    float: right;
+    color: #5A425C;
+    font-family: "Arimo", sans-serif;
+    font-size: 18px; 
+}
+header ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;  
+}
+header ul li a {
+    font-size: 18px;   
+    line-height: 18px; 
+    color: #5A425C; 
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 3px
+}
+li a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+    transition: .3s;
+    font-size: 20px;
+}
+.checkbtn {
+    font-size: 30px;
+    color: #5A425C;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+.heroImg {
+    height: auto;
+    padding: 0;
+}
+.content {
+    width: 100%;
+}
+#me {
+    width: 368px;
+    float: left;
+}
+#hey {
+    text-align: left;  
+}
+#sarrah {
+    text-align: center;
+}
+#ux {
+    text-align: end;
+}
+#iAm {
+    margin-left: 45%;
+}
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(15.0deg) }
+    20% { transform: rotate(-10.0deg) }
+   30% { transform: rotate(15.0deg) }
+   40% { transform: rotate(-5.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px
+}
+.icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+.number, .email, .linkedIn, .emailF, .location {
+    display: flex;
+    align-items: center;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 304px 304px 304px 80px;
+    grid-template-areas: 
+    "bertsBA bertsBA bertsBA bertsBA bertsBA bertsBA" 
+    "eleemo eleemo eleemo eleemo eleemo eleemo"
+    "dOI dOI dOI dOI dOI dOI";
+    row-gap: 50px;
+    justify-items: center;
+}
+.workGrid h2, h5 {
+    padding: 15px;
+}
+.workGrid button {
+    float: right;
+    border-radius: 15px;
+    padding: 7px;   
+    margin: 15px;
+    background-color: #A0A1BF;
+    border-style: none;
+}
+.bertsTextRight {
+    grid-area: bertsBA;
+    background-color: #FAE4E6;
+    width: 100%;
+}
+.bertsBAP {
+    height: 249px;
+    width: 391px;
+    float: left;
+    padding: 2%;
+}
+.eleemoTextLeft {
+    grid-area: eleemo;
+    background-color: #EED8D5; 
+}
+.eleemoTextLeft img {
+    height: 249px;
+    width: 391px;
+    float: right;
+    padding: 2%;
+}
+.doiTextRight {
+    grid-area: dOI;
+    background-color: #FAE4E6;
+}
+.doiTextRight img {
+    height: 249px;
+    width: 391px;
+    float: left;
+    padding: 2%;
+}
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: #EED8D5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+.footerContact {
+    text-align: center;
+    align-items: flex-start;
+    padding: 20px
+}
+h1 {
+    font-family: "Lora", serif;
+    font-size: 48px;
+    font-weight: 400;   
+    color: #362837;
+}
+h2 {
+    font-family: "Lora", serif;
+    font-size: 36px; 
+    color: #362837;
+    font-weight: 400; 
+}
+h3 {
+    font-family: "Lora", serif;
+    font-size: 24px; 
+    color: #362837;
+    font-weight: 400; 
+}
+h4 {
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    color: #5A425C;
+    font-weight: 400; 
+}
+h5 {
+    font-family: "Arimo", sans-serif;
+    font-size: 20px; 
+    color: #5A425C; 
+    font-weight: 400; 
+}
+p {
+    font-family: "Arimo", sans-serif;
+    font-size: 18px;   
+    line-height: 18px; 
+    color: #5A425C;
+    font-weight: 400; 
+}
+small {
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;  
+    color: #5A425C;  
+    font-weight: 400; 
+}
+
+
+@media only screen and (max-width: 770px) {
+    .checkbtn {
+        display: block;
+    }
+    header ul {
+        position: fixed;
+        width: 100%;
+        height: 100%vh;
+        background: #EED8D5;
+        top: 80px;
+        right:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    header ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #check:checked ~ ul{
+        right: 0%;
+    } 
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #me {
+        width: 250px;
+        height: 250px;
+        justify-content: center;
+    }
+    #hey {
+        text-align: left;  
+    }
+    #sarrah {
+        text-align: center;
+    }
+    #ux {
+        text-align: end;
+    }
+    #iAm {
+        margin-left: 0%;
+    }
+    .workGrid {
+        grid-template-rows: 478px 478px 478px;
+        grid-template-areas: 
+        "bertsBA " 
+        "eleemo "
+        "dOI";
+        row-gap: 30px;
+        align-items: center;
+        grid-template-columns: 100%;
+    }
+    .workGrid h2, h5 {
+        padding: 15px;
+    }
+    .eleemoTextLeft img {
+        align-self: flex-start;
+    }
+    .bertsTextRight {
+       width: 100%; 
+    }
+    footer div ul li p {
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-family: "Lora", serif;
+        font-size: 32px;
+        font-weight: 400;   
+        color: #362837;
+    }
+    h2 {
+        font-family: "Lora", serif;
+        font-size: 24px; 
+        color: #362837;
+        font-weight: 400; 
+    }
+    h3 {
+        font-family: "Lora", serif;
+        font-size: 24px; 
+        color: #362837;
+        font-weight: 400; 
+    }
+    h4 {
+        font-family: "Arimo", sans-serif;
+        font-size: 20px;
+        color: #5A425C;
+        font-weight: 400; 
+    }
+    h5 {
+        font-family: "Arimo", sans-serif;
+        font-size: 18px; 
+        color: #5A425C; 
+        font-weight: 400; 
+    }
+    p {
+        font-family: "Arimo", sans-serif;
+        font-size: 18px;   
+        line-height: 16px; 
+        color: #5A425C;
+        font-weight: 400; 
+    }
+    small {
+        font-family: "Arimo", sans-serif;
+        font-size: 16px;  
+        color: #5A425C;  
+        font-weight: 400;     
+    }
+    #iAm {
+        margin-left: 0%;
+    }   
+}
+@media only screen and (max-width: 512px) {
+    .checkbtn {
+        display: block;
+    }
+    header ul {
+        position: fixed;
+        width: 100%;
+        height: 100%vh;
+        background: #EED8D5;
+        top: 80px;
+        right:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    header ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #check:checked ~ ul{
+        right: 0%;
+    }
+    .workGrid {
+        grid-template-rows: 478px 478px 478px;
+        grid-template-areas: 
+        "bertsBA " 
+        "eleemo "
+        "dOI";
+        row-gap: 30px;
+        align-items: center;
+    }
+    .workGrid h2, h5 {
+        padding: 15px;
+    }
+    .bertsTextRight {
+        width: 100%; 
+        align-content: center;
+    #me {
+        height: 250px;
+        width: 250px;
+        padding: 25px;
+    }
+    footer div ul li p {
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-family: "Lora", serif;
+        font-size: 32px;
+        font-weight: 400;   
+        color: #362837;
+    }
+    h2 {
+        font-family: "Lora", serif;
+        font-size: 24px; 
+        color: #362837;
+        font-weight: 400; 
+    }
+    h3 {
+        font-family: "Lora", serif;
+        font-size: 24px; 
+        color: #362837;
+        font-weight: 400; 
+    }
+    h4 {
+        font-family: "Arimo", sans-serif;
+        font-size: 20px;
+        color: #5A425C;
+        font-weight: 400; 
+    }
+    h5 {
+        font-family: "Arimo", sans-serif;
+        font-size: 18px; 
+        color: #5A425C; 
+        font-weight: 400; 
+    }
+    p {
+        font-family: "Arimo", sans-serif;
+        font-size: 18px;   
+        line-height: 16px; 
+        color: #5A425C;
+        font-weight: 400; 
+    }
+    small {
+        font-family: "Arimo", sans-serif;
+        font-size: 16px;  
+        color: #5A425C;  
+        font-weight: 400;     
+    }
+    #iAm {
+        margin-left: 0%;
+    }   
+}
